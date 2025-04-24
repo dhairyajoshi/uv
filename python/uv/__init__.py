@@ -1,8 +1,9 @@
 from __future__ import annotations
 
 from ._find_uv import find_uv_bin
+from .env_templating import run_with_template
 
-__all__ = ["find_uv_bin"]
+__all__ = ["find_uv_bin", "run_with_template"]
 
 
 def __getattr__(attr_name: str) -> object:
